@@ -1,0 +1,34 @@
+.contacts-container
+{
+    width: 100%;
+    padding: 0 84px;
+    margin-bottom: 122px;
+}
+.contacts-container form
+{
+    width: 100%;
+    background: radial-gradient(var(--light-purple-radial-clr), var(--purple-radial-clr));
+    border-radius: 90px;
+    padding: 90px 110px;
+}
+.contacts-container form h1
+{
+    color: var(--white-clr);
+    font-size: 36px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.contacts-container form p
+{
+    font-size: 36px;
+    color: var(--white-clr);
+    text-align: center;
+    margin-bottom: 66px;
+}
+form ._line
+{
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(to right, #343045, #C0B7E8, #8176AF, #343045);
+    margin-bottom: 22px;
+}
