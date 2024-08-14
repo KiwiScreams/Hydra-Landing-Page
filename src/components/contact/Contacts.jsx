@@ -8,6 +8,7 @@ const Contacts = () => {
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
   const [errors, setErrors] = useState({});
+
   const validateForm = () => {
     const errors = {};
     if (!firstName) {
@@ -50,63 +51,101 @@ const Contacts = () => {
           <div className="_line"></div>
           <p>Let's Build Your VR Experience</p>
           <div className="form-container">
-            <input
-              type="text"
-              name="firstName"
-              id="firstName"
-              placeholder="First Name"
-              value={firstName}
-              onChange={(event) => setFirstName(event.target.value)}
-            />
-            {errors.firstName && (
-              <div className="error">{errors.firstName}</div>
-            )}
-            <input
-              type="text"
-              name="lastName"
-              id="lastName"
-              placeholder="Last Name"
-              value={lastName}
-              onChange={(event) => setLastName(event.target.value)}
-            />
-            {errors.lastName && <div className="error">{errors.lastName}</div>}
-            <input
-              type="text"
-              name="email"
-              id="email"
-              placeholder="Email"
-              value={email}
-              onChange={(event) => setEmail(event.target.value)}
-            />
-            {errors.email && <div className="error">{errors.email}</div>}
-            <input
-              type="text"
-              name="phoneNumber"
-              id="phoneNumber"
-              placeholder="Phone Number"
-              value={phoneNumber}
-              onChange={(event) => setPhoneNumber(event.target.value)}
-            />
-            {errors.phoneNumber && (
-              <div className="error">{errors.phoneNumber}</div>
-            )}
-            <input
-              type="text"
-              name="subject"
-              id="subject"
-              placeholder="Subject"
-              value={subject}
-              onChange={(event) => setSubject(event.target.value)}
-            />
-            {errors.subject && <div className="error">{errors.subject}</div>}
-            <textarea
-              name="message"
-              id="message"
-              placeholder="Tell Us Something..."
-              value={message}
-              onChange={(event) => setMessage(event.target.value)}
-            />
-            {errors.message && <div className="error">{errors.message}</div>}
+            <div className="input">
+              <input
+                type="text"
+                name="firstName"
+                id="firstName"
+                placeholder="First Name"
+                value={firstName}
+                onChange={(event) => setFirstName(event.target.value)}
+              />
+              {errors.firstName && (
+                <div className="error-message">
+                  <i className="fas fa-exclamation-circle"></i>
+                  {errors.firstName}
+                </div>
+              )}
+            </div>
+            <div className="input">
+              <input
+                type="text"
+                name="lastName"
+                id="lastName"
+                placeholder="Last Name"
+                value={lastName}
+                onChange={(event) => setLastName(event.target.value)}
+              />
+              {errors.lastName && (
+                <div className="error-message">
+                  <i className="fas fa-exclamation-circle"></i>
+                  {errors.lastName}
+                </div>
+              )}
+            </div>
+            <div className="input">
+              <input
+                type="text"
+                name="email"
+                id="email"
+                placeholder="Email"
+                value={email}
+                onChange={(event) => setEmail(event.target.value)}
+              />
+              {errors.email && (
+                <div className="error-message">
+                  <i className="fas fa-exclamation-circle"></i>
+                  {errors.email}
+                </div>
+              )}
+            </div>
+            <div className="input">
+              <input
+                type="text"
+                name="phoneNumber"
+                id="phoneNumber"
+                placeholder="Phone Number"
+                value={phoneNumber}
+                onChange={(event) => setPhoneNumber(event.target.value)}
+              />
+              {errors.phoneNumber && (
+                <div className="error-message">
+                  <i className="fas fa-exclamation-circle"></i>
+                  {errors.phoneNumber}
+                </div>
+              )}
+            </div>
+            <div className="input subject">
+              <input
+                type="text"
+                name="subject"
+                id="subject"
+                placeholder="Subject"
+                value={subject}
+                onChange={(event) => setSubject(event.target.value)}
+              />
+              {errors.subject && (
+                <div className="error-message">
+                  <i className="fas fa-exclamation-circle"></i>
+                  {errors.subject}
+                </div>
+              )}
+            </div>
+            <div className="input textarea">
+              <textarea
+                name="message"
+                id="message"
+                placeholder="Tell Us Something..."
+                value={message}
+                onChange={(event) => setMessage(event.target.value)}
+              />
+              {errors.message && (
+                <div className="error-message">
+                  <i className="fas fa-exclamation-circle"></i>
+                  {errors.message}
+                </div>
+              )}
+            </div>
           </div>
           <button>SEND TO HYDRA</button>
         </form>

@@ -37,21 +37,29 @@ form ._line {
   gap: 10px;
   margin-bottom: 52px;
 }
-form input {
+form .input input {
   background-color: transparent;
   border-radius: 40px;
   height: 72px;
   padding-left: 42px;
   margin-bottom: 40px;
   color: var(--white-clr);
-  width: calc(50% - 5px);
+  width: 100%;
   border: 2px solid var(--white-clr);
+}
+form .input {
+  width: fit-content;
+  position: relative;
+  width: calc(50% - 5px);
 }
 form input::placeholder,
 form textarea::placeholder {
   color: var(--white-clr);
 }
-form input.subject {
+form .subject {
+  width: 100%;
+}
+form .textarea {
   width: 100%;
 }
 form textarea {
@@ -86,4 +94,18 @@ form button:hover {
     var(--light-purple-gradient-clr),
     var(--purple-gradient-clr)
   );
+}
+.error-message {
+  color: red;
+  font-size: 16px;
+  margin-bottom: 10px;
+  position: absolute;
+  padding: 5px;
+  border-radius: 5px;
+  top: -34px;
+  left: 30px;
+  border: 1px solid red;
+}
+.error-message i {
+  margin-right: 2px;
 }
