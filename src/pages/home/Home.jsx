@@ -4,11 +4,6 @@ const Home = () => {
   return (
     <>
       <Layout />
-      <Layout />
-      <Layout />
-      <Layout />
-      <Layout />
-      <Layout />
     </>
   );
 };
