@@ -78,3 +78,31 @@
   align-items: center;
   gap: 40px;
 }
+.animated-arrow
+{
+    animation: moveArrow 1s infinite;
+}
+@keyframes moveArrow
+{
+    0%
+    {
+      transform: translateX(0);
+    }
+    50%
+    {
+      transform: translateX(10px);
+    }
+    100%
+    {
+      transform: translateX(0);
+    }
+}
+.scroll-text
+{
+    transform: translateY(100%);
+    transition: transform 0.5s;
+}
+.scrolled .scroll-text
+{
+    transform: translateY(0);
+}
