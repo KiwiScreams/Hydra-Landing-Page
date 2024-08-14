@@ -41,6 +41,12 @@ const Contacts = () => {
     event.preventDefault();
     if (validateForm()) {
       console.log("Form submitted");
+      setFirstName("");
+      setLastName("");
+      setEmail("");
+      setPhoneNumber("");
+      setSubject("");
+      setMessage("");
     }
   };
   return (
