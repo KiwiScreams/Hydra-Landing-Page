@@ -106,6 +106,29 @@ form button:hover {
   left: 30px;
   border: 1px solid red;
 }
-.error-message i {
+.error-message i
+{
   margin-right: 2px;
 }
+.success-panel
+{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: radial-gradient(
+    var(--light-purple-radial-clr),
+    var(--purple-radial-clr)
+  );
+    padding: 50px;
+    z-index: 20;
+    border-radius: 10px;
+    color: var(--white-clr);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+.success-panel h2
+{
+    margin-bottom: 20px;
+}
+  
