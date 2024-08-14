@@ -8,6 +8,8 @@ const Contacts = () => {
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
   const [errors, setErrors] = useState({});
+  const [isSubmitted, setIsSubmitted] = useState(false);
+  const [showSuccessPanel, setShowSuccessPanel] = useState(false);
 
   const validateForm = () => {
     const errors = {};
@@ -47,6 +49,11 @@ const Contacts = () => {
       setPhoneNumber("");
       setSubject("");
       setMessage("");
+      setIsSubmitted(true);
+      setShowSuccessPanel(true);
+      setTimeout(() => {
+        setShowSuccessPanel(false);
+      }, 3000);
     }
   };
   return (
@@ -155,6 +162,12 @@ const Contacts = () => {
           </div>
           <button>SEND TO HYDRA</button>
         </form>
+        {showSuccessPanel && (
+          <div className="success-panel">
+            <h2>Success!</h2>
+            <p>Your message has been sent to Hydra.</p>
+          </div>
+        )}
       </section>
     </>
   );
