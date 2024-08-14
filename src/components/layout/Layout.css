@@ -1,0 +1,80 @@
+.layout-section
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 84px;
+  margin-top: 140px;
+}
+.layout-section .text-container h1
+{
+  font-size: 46px;
+  color: var(--white-clr);
+  margin-bottom: 36px;
+}
+.layout-section .text-container h1 span:nth-child(1)
+{
+  background: linear-gradient(
+    to right,
+    var(--light-purple-gradient-clr),
+    var(--purple-gradient-clr)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.layout-section .text-container h1 span:nth-child(3)
+{
+  background: linear-gradient(
+    to right,
+    var(--purple-gradient-clr),
+    var(--light-purple-gradient-clr)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.layout-section .text-container
+{
+  width: 40%;
+}
+.layout-section .image-container
+{
+  background-color: hsla(0, 0%, 0%, 0.13);
+  border-radius: 100px 100px 100px 240px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+.layout-section p
+{
+  color: var(--white-clr);
+  font-size: 16px;
+  margin-bottom: 83px;
+}
+.layout-section button
+{
+  width: 214px;
+  height: 48px;
+  background: linear-gradient(
+    to right,
+    var(--purple-gradient-clr),
+    var(--light-purple-gradient-clr)
+  );
+  border-radius: 40px;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.layout-section button:hover
+{
+  background: linear-gradient(
+    to right,
+    var(--light-purple-gradient-clr),
+    var(--purple-gradient-clr)
+  );
+}
+.layout-section .buttons-container
+{
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}

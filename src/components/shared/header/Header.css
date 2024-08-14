@@ -29,12 +29,14 @@ header nav a
 header nav a:hover
 {
     color: var(--light-purple-gradient-clr);
+    transform: scale(1.2);
 }
 header button
 {
     width: 154px;
     height: 48px;
-    border-radius: 40px;    font-size: 12px;
+    border-radius: 40px;    
+    font-size: 12px;
     font-weight: bold;
     text-transform: uppercase;
 }
