@@ -110,6 +110,7 @@
 {
     padding: 84px;
     margin-top: 100px;
+    margin-bottom: 90px;
 }
 .social-section .social-panel
 {
@@ -138,4 +139,27 @@
     width: 1px;
     border-radius: 50%;
     background-color: #C0B7E8;
+}
+.animate-social
+{
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.5s, transform 0.5s;
+}
+.animate-social.active
+{
+    opacity: 1;
+    transform: translateY(0);
+}
+.social-section
+{
+    transition: opacity 0.5s;
+}
+.social-section.hidden
+{
+    opacity: 0;
+}
+.social-section.visible
+{
+    opacity: 1;
 }
