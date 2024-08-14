@@ -15,14 +15,17 @@ const Layout = () => {
       } else {
         setScrolled(false);
       }
-      if (window.scrollY > 500) {
-        setAnimateSocial(true);
-      }
-      if (window.scrollY < 10) {
-        setSocialVisible(false);
-      } else {
+      if (window.scrollY > 80) {
         setSocialVisible(true);
+      } else {
+        setSocialVisible(false);
       }
+      requestAnimationFrame(() => {
+        setAnimateSocial(true);
+        setTimeout(() => {
+          setAnimateSocial(false);
+        }, 100);
+      });
     };
     window.addEventListener("scroll", handleScroll);
     return () => {
