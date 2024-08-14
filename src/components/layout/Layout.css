@@ -106,3 +106,36 @@
 {
     transform: translateY(0);
 }
+.social-section
+{
+    padding: 84px;
+    margin-top: 100px;
+}
+.social-section .social-panel
+{
+    background: radial-gradient(var(--light-purple-radial-clr), var(--purple-radial-clr));
+    border-radius: 90px;
+    width: 100%;
+    padding: 26px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.social-section .social-panel .box
+{
+    display: flex;
+    align-items: center;
+    color: var(--white-clr);
+}
+.social-info h3
+{
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.social-section .line
+{
+    height: 116px;
+    width: 1px;
+    border-radius: 50%;
+    background-color: #C0B7E8;
+}
