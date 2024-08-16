@@ -2,6 +2,7 @@
 {
     width: 100%;
     padding: 0 84px;
+    margin-bottom: 130px;
 }
 .tech-section .tech-container
 {
@@ -48,16 +49,17 @@
     text-align: center;
     color: var(--white-clr);
 }
-.tech-section .tech-container .text-container h1:nth-child(1)
+.bold
 {
     font-size: 36px;
-    margin-bottom: 10px;
     font-weight: bold;
+    color: var(--white-clr);
 }
-.tech-section .tech-container .text-container h1:nth-child(2)
+.norm
 {
     font-size: 36px;
     font-weight: lighter;
+    color: var(--white-clr);
 }
 .software-container
 {
@@ -88,4 +90,84 @@
 .arrow-icon:hover
 {
     animation-play-state: paused;
+}
+.build-container
+{
+    display: flex;
+    color: var(--white-clr);
+    margin-bottom: 100px;
+    justify-content: space-between;
+}
+.build-container p
+{
+    width: 50%;
+}
+.build-container .title .title-container
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+}
+.longArrow
+{
+    width: 228px;
+    height: 50px;
+    background-image: url(../../assets/images/long\ arrow.svg);
+    background-size: 100%;
+    /* background-color: red; */
+    background-position: center;
+}
+.numbers-container
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 80px;
+}
+.numbers-container .number
+{
+    color: var(--white-clr);
+    text-align: center;
+}
+.numbers-container .number h1
+{
+    font-size: 64px;
+    color: var(--text-clr);
+    border-radius: 50%;
+    background: linear-gradient(
+        to right,
+        var(--purple-gradient-clr),
+        var(--light-purple-gradient-clr)
+      );
+    width: 160px;
+    height: 160px;
+    display: flex;
+    margin-bottom: 26px;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.numbers-container .number h2
+{
+    text-align: center;
+    font-size: 24px;
+    position: absolute;
+    bottom: -50px;
+}
+.numbers-container .black
+{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #00000021;
+    position: relative;
+}
+.numbers-container .number:hover h1
+{
+    width: 100%;
+    height: 100%;
 }
