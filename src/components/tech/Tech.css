@@ -59,3 +59,33 @@
     font-size: 36px;
     font-weight: lighter;
 }
+.software-container
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.arrow-icon
+{
+    position: absolute;
+    animation: pulse infinite 0.8s;
+}
+@keyframes pulse
+{
+    0%
+    {
+      top: 10px;
+    }
+    50%
+    {
+      top: 30px;
+    }
+    100%
+    {
+      top: 10px;
+    }
+}
+.arrow-icon:hover
+{
+    animation-play-state: paused;
+}
