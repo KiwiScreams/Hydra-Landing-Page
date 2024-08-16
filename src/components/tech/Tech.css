@@ -1,0 +1,61 @@
+.tech-section
+{
+    width: 100%;
+    padding: 0 84px;
+}
+.tech-section .tech-container
+{
+    width: 100%;
+    height: 300px;
+    border-radius: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+    background-image: url(../../assets/images/techGirl.png);
+    position: relative;
+}
+.tech-section .tech-container .arrow
+{
+    background-color: #00000021;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    bottom: -50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tech-section .tech-container .arrow i
+{
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(
+        to right,
+        var(--purple-gradient-clr),
+        var(--light-purple-gradient-clr)
+      );
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    border-radius: 50%;
+    font-size: 30px;
+    color: var(--light-purple-radial-clr);
+}
+.tech-section .tech-container .text-container
+{
+    text-align: center;
+    color: var(--white-clr);
+}
+.tech-section .tech-container .text-container h1:nth-child(1)
+{
+    font-size: 36px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.tech-section .tech-container .text-container h1:nth-child(2)
+{
+    font-size: 36px;
+    font-weight: lighter;
+}

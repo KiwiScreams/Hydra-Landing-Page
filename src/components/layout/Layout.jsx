@@ -13,17 +13,13 @@ const Layout = () => {
       } else {
         setScrolled(false);
       }
-      if (window.scrollY > 80) {
-        setSocialVisible(true);
-      } else {
-        setSocialVisible(false);
-      }
     };
     window.addEventListener("scroll", handleScroll);
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
   return (
     <>
       <section className={`layout-section ${scrolled ? "scrolled" : ""}`}>
