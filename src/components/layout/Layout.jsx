@@ -5,8 +5,6 @@ import { useState, useEffect } from "react";
 import locationIcon from "../../assets/images/Location-Icon.svg";
 const Layout = () => {
   const [scrolled, setScrolled] = useState(false);
-  const [animateSocial, setAnimateSocial] = useState(false);
-  const [socialVisible, setSocialVisible] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -20,12 +18,6 @@ const Layout = () => {
       } else {
         setSocialVisible(false);
       }
-      requestAnimationFrame(() => {
-        setAnimateSocial(true);
-        setTimeout(() => {
-          setAnimateSocial(false);
-        }, 100);
-      });
     };
     window.addEventListener("scroll", handleScroll);
     return () => {
@@ -54,11 +46,7 @@ const Layout = () => {
           <img src={layoutImage} alt="" />
         </div>
       </section>
-      <section
-        className={`social-section ${
-          animateSocial ? "animate-social active" : "animate-social"
-        } ${socialVisible ? "visible" : "hidden"}`}
-      >
+      <section className={`social-section`}>
         <div className="social-panel">
           <div className="box">
             <img src={locationIcon} alt="" />
