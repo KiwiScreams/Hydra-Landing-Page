@@ -1,4 +1,8 @@
 import "./Tech.css";
+import unity from "../../assets/images/unity.png";
+import oculus from "../../assets/images/oculus.png";
+import unreal from "../../assets/images/unreal.png";
+import vive from "../../assets/images/vive.png";
 const Technology = () => {
   return (
     <>
@@ -11,6 +15,12 @@ const Technology = () => {
           <div className="arrow">
             <i class="fa-solid fa-chevron-down"></i>
           </div>
+        </div>
+        <div className="software-container">
+            <div><img src={vive} alt="" /></div>
+            <div><img src={unity} alt="" /></div>
+            <div><img src={unreal} alt="" /></div>
+            <div><img src={oculus} alt="" /></div>
         </div>
       </section>
     </>

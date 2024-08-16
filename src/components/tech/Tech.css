@@ -59,3 +59,9 @@
     font-size: 36px;
     font-weight: lighter;
 }
+.software-container
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
