@@ -13,7 +13,7 @@ const Technology = () => {
             <h1>USED BY HYDRA VR.</h1>
           </div>
           <div className="arrow">
-            <i class="fa-solid fa-chevron-down"></i>
+            <i class="fa-solid fa-chevron-down arrow-icon"></i>
           </div>
         </div>
         <div className="software-container">
