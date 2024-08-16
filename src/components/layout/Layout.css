@@ -22,6 +22,7 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
 .layout-section .text-container h1 span:nth-child(3)
 {
   background: linear-gradient(
@@ -38,7 +39,7 @@
 }
 .layout-section .image-container
 {
-  background-color: hsla(0, 0%, 0%, 0.13);
+  background-color: #00000021;
   border-radius: 100px 100px 100px 240px;
   padding: 10px;
   display: flex;
