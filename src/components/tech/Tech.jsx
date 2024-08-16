@@ -4,6 +4,12 @@ import oculus from "../../assets/images/oculus.png";
 import unreal from "../../assets/images/unreal.png";
 import vive from "../../assets/images/vive.png";
 import longArrow from "../../assets/images/long arrow.svg";
+const numbers = [
+  { id: 1, title: "3D Conception & Design" },
+  { id: 2, title: "Interaction Design" },
+  { id: 3, title: "VR World User Testing" },
+  { id: 4, title: "Hydra VR Deploy" },
+];
 const Technology = () => {
   return (
     <>
@@ -48,30 +54,14 @@ const Technology = () => {
           </p>
         </div>
         <div className="numbers-container">
-          <div className="black">
-            <div className="number">
-              <h1>01</h1>
-              <h2>3D Conception & Design</h2>
+          {numbers.map((number) => (
+            <div key={number.id} className="black">
+              <div className="number">
+                <h1>0{number.id}</h1>
+                <h2>{number.title}</h2>
+              </div>
             </div>
-          </div>
-          <div className="black">
-            <div className="number">
-              <h1>02</h1>
-              <h2>Interaction Design</h2>
-            </div>
-          </div>
-          <div className="black">
-            <div className="number">
-              <h1>03</h1>
-              <h2>VR World User Testing</h2>
-            </div>
-          </div>
-          <div className="black">
-            <div className="number">
-              <h1>04</h1>
-              <h2>Hydra VR Deploy</h2>
-            </div>
-          </div>
+          ))}
         </div>
       </section>
     </>
