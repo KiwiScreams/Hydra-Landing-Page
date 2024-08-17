@@ -3,6 +3,7 @@ import { NavLink } from "react-router-dom";
 import hydraLogo from "../../../assets/images/Hydra.svg";
 import hydraText from "../../../assets/images/HydraText.svg";
 import { useState, useEffect } from "react";
+import { Link } from "react-scroll";
 const Header = () => {
   const [scrolled, setScrolled] = useState(false);
   const handleScroll = () => {
@@ -22,15 +23,58 @@ const Header = () => {
   return (
     <>
       <header className={scrolled ? "scrolled" : ""}>
-        <NavLink to="/">
-          <img src={hydraLogo} alt="" className="logo"/>
-          <img src={hydraText} alt="" className="logo"/>
-        </NavLink>
+        <Link
+          to="home"
+          spy={true}
+          smooth={true}
+          hashSpy={true}
+          offset={50}
+          duration={500}
+        >
+          <img src={hydraLogo} alt="" className="logo" />
+          <img src={hydraText} alt="" className="logo" />
+        </Link>
         <nav>
-          <NavLink to="/">about</NavLink>
-          <NavLink to="/">services</NavLink>
-          <NavLink to="/">technologies</NavLink>
-          <NavLink to="/">how to</NavLink>
+          <Link
+            to="about"
+            spy={true}
+            smooth={true}
+            hashSpy={true}
+            offset={50}
+            duration={500}
+          >
+            about
+          </Link>
+          <Link
+            to="services"
+            spy={true}
+            smooth={true}
+            hashSpy={true}
+            offset={50}
+            duration={500}
+          >
+            services
+          </Link>
+          <Link
+            to="technologies"
+            spy={true}
+            smooth={true}
+            hashSpy={true}
+            offset={50}
+            duration={500}
+          >
+            technologies
+          </Link>
+          <Link
+            to="howTo"
+            spy={true}
+            smooth={true}
+            hashSpy={true}
+            offset={50}
+            duration={500}
+          >
+            how to
+          </Link>
         </nav>
         <div className="buttons-container">
           <button>contact us</button>
