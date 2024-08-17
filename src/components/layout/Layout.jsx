@@ -22,7 +22,7 @@ const Layout = () => {
 
   return (
     <>
-      <section className={`layout-section ${scrolled ? "scrolled" : ""}`}>
+      <section className={`layout-section ${scrolled ? "scrolled" : ""}`} id="home">
         <div className="text-container">
           <h1>
             <span>Dive</span> Into The Depths

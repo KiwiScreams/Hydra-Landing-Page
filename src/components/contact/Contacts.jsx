@@ -58,7 +58,7 @@ const Contacts = () => {
   };
   return (
     <>
-      <section className="contacts-container">
+      <section className="contacts-container" id="howTo">
         <form onSubmit={handleSubmit}>
           <h1>JOIN HYDRA</h1>
           <div className="_line"></div>

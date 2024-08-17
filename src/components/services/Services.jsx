@@ -32,7 +32,7 @@ const Services = () => {
   ];
   return (
     <>
-      <section className="services-section">
+      <section className="services-section" id="services">
         <div className="build-container">
           <div className="title">
             <h1 className="bold">WHY BUILD</h1>

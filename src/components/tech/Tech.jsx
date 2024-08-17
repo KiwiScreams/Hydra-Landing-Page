@@ -13,7 +13,7 @@ const numbers = [
 const Technology = () => {
   return (
     <>
-      <section className="tech-section">
+      <section className="tech-section" id="technologies">
         <div className="tech-container">
           <div className="text-container">
             <h1 className="bold">TECHNOLOGIES & HARDWARE</h1>
