@@ -1,19 +1,20 @@
 .services-container
 {
-    background-color: rebeccapurple;
     padding: 0 84px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 10px;
+    margin-bottom: 114px;
 }
 .services-container .service
 {
     background: radial-gradient(var(--light-purple-radial-clr), var(--purple-radial-clr));
     width: calc(100% / 4);
-    padding: 20px 30px 40px 20px;
+    padding: 20px 30px 40px 30px;
     border-radius: 40px;
     color: var(--white-clr);
+    text-align: center;
 }
 .services-container .service h3
 {

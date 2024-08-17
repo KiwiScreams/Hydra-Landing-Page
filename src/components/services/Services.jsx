@@ -4,6 +4,32 @@ import img2 from "../../assets/images/img2.png";
 import img3 from "../../assets/images/img3.png";
 import img4 from "../../assets/images/img4.png";
 const Services = () => {
+  const servicesData = [
+    {
+      img: img1,
+      title: "SIMULATION",
+      description:
+        "A technique used to model real-world processes or systems through virtual environments or scenarios, allowing users to experiment, practice, and analyze outcomes without real-world risks.",
+    },
+    {
+      img: img2,
+      title: "EDUCATION",
+      description:
+        "The process of acquiring knowledge, skills, values, and attitudes through various methods such as instruction, training, or self-study, aimed at fostering intellectual and personal growth.",
+    },
+    {
+      img: img3,
+      title: "SELF-CARE",
+      description:
+        "The practice of taking deliberate actions to maintain or improve one's physical, mental, and emotional well-being, including activities like relaxation, exercise, and healthy eating.",
+    },
+    {
+      img: img4,
+      title: "OUTDOOR",
+      description:
+        "Refers to activities or environments that take place outside, typically in natural settings, and often includes pursuits like hiking, camping, or simply enjoying fresh air and natural landscapes.",
+    },
+  ];
   return (
     <>
       <section className="services-section">
@@ -24,52 +50,18 @@ const Services = () => {
           </p>
         </div>
         <div className="services-container">
-          <div className="service">
-            <div className="black">
-              <div className="img">
-                <img src={img1} alt="" />
+          {servicesData.map((service, index) => (
+            <div className="service" key={index}>
+              <div className="black">
+                <div className="img">
+                  <img src={service.img} alt="" />
+                </div>
               </div>
+              <h3>{service.title}</h3>
+              <p>{service.description}</p>
+              <button>TRY IT NOW</button>
             </div>
-            <h3>simulation</h3>
-            <p>
-              Vitae sapien pellentesque habitant morbi nunc. Viverra aliquet
-              porttitor rhoncus libero justo laoreet sit amet vitae.
-            </p>
-            <button>TRY IT NOW</button>
-          </div>
-          <div className="service">
-            <div className="black">
-              <img src={img2} alt="" />
-            </div>
-            <h3>simulation</h3>
-            <p>
-              Vitae sapien pellentesque habitant morbi nunc. Viverra aliquet
-              porttitor rhoncus libero justo laoreet sit amet vitae.
-            </p>
-            <button>TRY IT NOW</button>
-          </div>
-          <div className="service">
-            <div className="black">
-              <img src={img3} alt="" />
-            </div>
-            <h3>simulation</h3>
-            <p>
-              Vitae sapien pellentesque habitant morbi nunc. Viverra aliquet
-              porttitor rhoncus libero justo laoreet sit amet vitae.
-            </p>
-            <button>TRY IT NOW</button>
-          </div>
-          <div className="service">
-            <div className="black">
-              <img src={img4} alt="" />
-            </div>
-            <h3>simulation</h3>
-            <p>
-              Vitae sapien pellentesque habitant morbi nunc. Viverra aliquet
-              porttitor rhoncus libero justo laoreet sit amet vitae.
-            </p>
-            <button>TRY IT NOW</button>
-          </div>
+          ))}
         </div>
       </section>
     </>
