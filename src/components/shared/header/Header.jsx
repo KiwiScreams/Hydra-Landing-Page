@@ -28,7 +28,7 @@ const Header = () => {
           spy={true}
           smooth={true}
           hashSpy={true}
-          offset={50}
+          offset={-120}
           duration={500}
         >
           <img src={hydraLogo} alt="" className="logo" />
@@ -40,7 +40,7 @@ const Header = () => {
             spy={true}
             smooth={true}
             hashSpy={true}
-            offset={50}
+            offset={-120}
             duration={500}
           >
             about
@@ -50,7 +50,7 @@ const Header = () => {
             spy={true}
             smooth={true}
             hashSpy={true}
-            offset={50}
+            offset={-120}
             duration={500}
           >
             services
@@ -60,7 +60,7 @@ const Header = () => {
             spy={true}
             smooth={true}
             hashSpy={true}
-            offset={50}
+            offset={-120}
             duration={500}
           >
             technologies
@@ -70,7 +70,7 @@ const Header = () => {
             spy={true}
             smooth={true}
             hashSpy={true}
-            offset={50}
+            offset={-120}
             duration={500}
           >
             how to
