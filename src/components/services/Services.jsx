@@ -7,27 +7,27 @@ const Services = () => {
   const servicesData = [
     {
       img: img1,
-      title: "simulation",
+      title: "SIMULATION",
       description:
-        "Vitae sapien pellentesque habitant morbi nunc. Viverra aliquet porttitor rhoncus libero justo laoreet sit amet vitae.",
+        "A technique used to model real-world processes or systems through virtual environments or scenarios, allowing users to experiment, practice, and analyze outcomes without real-world risks.",
     },
     {
       img: img2,
-      title: "simulation",
+      title: "EDUCATION",
       description:
-        "Vitae sapien pellentesque habitant morbi nunc. Viverra aliquet porttitor rhoncus libero justo laoreet sit amet vitae.",
+        "The process of acquiring knowledge, skills, values, and attitudes through various methods such as instruction, training, or self-study, aimed at fostering intellectual and personal growth.",
     },
     {
       img: img3,
-      title: "simulation",
+      title: "SELF-CARE",
       description:
-        "Vitae sapien pellentesque habitant morbi nunc. Viverra aliquet porttitor rhoncus libero justo laoreet sit amet vitae.",
+        "The practice of taking deliberate actions to maintain or improve one's physical, mental, and emotional well-being, including activities like relaxation, exercise, and healthy eating.",
     },
     {
       img: img4,
-      title: "simulation",
+      title: "OUTDOOR",
       description:
-        "Vitae sapien pellentesque habitant morbi nunc. Viverra aliquet porttitor rhoncus libero justo laoreet sit amet vitae.",
+        "Refers to activities or environments that take place outside, typically in natural settings, and often includes pursuits like hiking, camping, or simply enjoying fresh air and natural landscapes.",
     },
   ];
   return (
