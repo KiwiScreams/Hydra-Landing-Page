@@ -28,7 +28,7 @@ const Layout = () => {
             <span>Dive</span> Into The Depths
             <br /> Of <span>Virtual Reality</span>
           </h1>
-          <p className="scroll-text">
+          <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore nisl tincidunt eget.
             Lectus mauris eros in vitae .
