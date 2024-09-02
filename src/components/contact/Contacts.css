@@ -1,6 +1,6 @@
 .contacts-container {
   width: 100%;
-  padding: 0 84px;
+  padding: 0 64px;
   margin-bottom: 122px;
 }
 .contacts-container form {
@@ -106,28 +106,46 @@ form button:hover {
   left: 30px;
   border: 1px solid red;
 }
-.error-message i
-{
+.error-message i {
   margin-right: 2px;
 }
-.success-panel
-{
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: radial-gradient(
+.success-panel {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: radial-gradient(
     var(--light-purple-radial-clr),
     var(--purple-radial-clr)
   );
-    padding: 50px;
-    z-index: 20;
-    border-radius: 10px;
-    color: var(--white-clr);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    text-align: center;
+  padding: 50px;
+  z-index: 20;
+  border-radius: 10px;
+  color: var(--white-clr);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
 }
-.success-panel h2
-{
-    margin-bottom: 20px;
+.success-panel h2 {
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 1000px) {
+  .contacts-container {
+    padding: 0 24px;
+  }
+  .contacts-container form {
+    padding: 60px 30px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .contacts-container form {
+    padding: 40px 10px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .contacts-container form {
+    padding: 60px 30px;
+  }
+  form .input {
+    width: 100%;
+  }
 }
