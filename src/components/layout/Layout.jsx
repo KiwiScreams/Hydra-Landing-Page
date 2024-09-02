@@ -94,7 +94,10 @@ const Layout = () => {
         </div>
       </section>
       <section className={`social-section mobile`}>
-        <div className="social-slider">
+        <div className="social-slider social-panel">
+          <button className="prev" onClick={handlePrevClick}>
+            <i className="fa-solid fa-chevron-left"></i>
+          </button>
           <div className="slide">
             <div className="box">
               <img src={locationIcon} alt="" />
@@ -122,14 +125,9 @@ const Layout = () => {
               </div>
             </div>
           </div>
-          <div className="slider-nav">
-            <button className="prev" onClick={handlePrevClick}>
-              Prev
-            </button>
-            <button className="next" onClick={handleNextClick}>
-              Next
-            </button>
-          </div>
+          <button className="next" onClick={handleNextClick}>
+            <i className="fa-solid fa-chevron-right"></i>
+          </button>
         </div>
       </section>
     </>
