@@ -87,12 +87,12 @@ header.mobile {
   padding: 10px 20px 10px 20px;
   position: fixed;
   top: 0;
+  display: none;
 }
-header.mobile .logo
-{
-    position: absolute;
-    top: 0px;
-    z-index: 20;
+header.mobile .logo {
+  position: absolute;
+  top: 0px;
+  z-index: 20;
 }
 header.mobile nav {
   position: absolute;
@@ -106,9 +106,8 @@ header.mobile nav {
   gap: 12px;
 }
 header.mobile.scrolled nav,
-header.mobile.scrolled
-{
-    background-color: var(--bg-clr);
+header.mobile.scrolled {
+  background-color: var(--bg-clr);
 }
 header.mobile nav .buttons-container {
   display: flex;
@@ -129,10 +128,29 @@ header.mobile .bar-container {
 .bar2,
 .bar3 {
   width: 35px;
-  height: 5px;
+  height: 3px;
   background-color: white;
   margin: 6px 0;
   transition: 0.4s;
+}
+.bar1,
+.bar2,
+.bar3 {
+  background: linear-gradient(
+    to right,
+    var(--light-purple-gradient-clr),
+    var(--purple-gradient-clr)
+  );
+  border-radius: 40px;
+}
+.bar2
+{
+    width: 20px;
+    margin-left: 15px;
+}
+.bar1
+{
+    
 }
 .change .bar1 {
   transform: translate(0, 11px) rotate(-45deg);
@@ -144,7 +162,7 @@ header.mobile .bar-container {
   transform: translate(0, -11px) rotate(45deg);
 }
 header.mobile .nav-closed {
-    display: none;
+  display: none;
 }
 header.mobile .nav-open {
   visibility: visible;
@@ -172,5 +190,8 @@ header.mobile .nav-open {
 @media screen and (max-width: 790px) {
   header.desktop {
     display: none;
+  }
+  header.mobile {
+    display: flex;
   }
 }
