@@ -97,7 +97,7 @@ const Header = () => {
         >
           <img src={hydraLogo} alt="" className="logo logo-icon" />
         </Link>
-        <nav>
+        <nav className={`${isMenuOpen ? "nav-open" : "nav-closed"}`}>
           <Link
             to="about"
             spy={true}

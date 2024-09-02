@@ -83,18 +83,32 @@ header.scrolled .logo:nth-child(2) {
 }
 header.mobile {
   width: 100%;
-  padding: 10px 20px 0 20px;
+  position: absolute;
+  padding: 10px 20px 10px 20px;
+  position: fixed;
+  top: 0;
+}
+header.mobile .logo
+{
+    position: absolute;
+    top: 0px;
+    z-index: 20;
 }
 header.mobile nav {
   position: absolute;
-  top: 90px;
-  right: 20px;
-  width: 90%;
+  top: 50px;
+  right: 0px;
+  width: 100%;
   padding: 15px 0 0 0;
-  background-color: var(--text-clr);
+  background-color: var(--bg-clr);
   display: flex;
   flex-direction: column;
   gap: 12px;
+}
+header.mobile.scrolled nav,
+header.mobile.scrolled
+{
+    background-color: var(--bg-clr);
 }
 header.mobile nav .buttons-container {
   display: flex;
@@ -128,6 +142,12 @@ header.mobile .bar-container {
 }
 .change .bar3 {
   transform: translate(0, -11px) rotate(45deg);
+}
+header.mobile .nav-closed {
+    display: none;
+}
+header.mobile .nav-open {
+  visibility: visible;
 }
 @media screen and (max-width: 1110px) {
   header {
