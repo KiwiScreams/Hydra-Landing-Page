@@ -81,3 +81,76 @@ header.scrolled .logo {
 header.scrolled .logo:nth-child(2) {
   display: none;
 }
+header.mobile {
+  width: 100%;
+  padding: 10px 20px 0 20px;
+}
+header.mobile nav {
+  position: absolute;
+  top: 90px;
+  right: 20px;
+  width: 90%;
+  padding: 15px 0 0 0;
+  background-color: var(--text-clr);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+header.mobile nav .buttons-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+}
+header.mobile nav .buttons-container button {
+  width: 100%;
+  border-radius: 0;
+  border: none;
+}
+header.mobile .bar-container {
+  display: inline-block;
+  cursor: pointer;
+}
+.bar1,
+.bar2,
+.bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: white;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+.change .bar1 {
+  transform: translate(0, 11px) rotate(-45deg);
+}
+.change .bar2 {
+  opacity: 0;
+}
+.change .bar3 {
+  transform: translate(0, -11px) rotate(45deg);
+}
+@media screen and (max-width: 1110px) {
+  header {
+    padding: 16px 16px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  header {
+    padding: 16px 16px;
+  }
+  header .logo:nth-child(2) {
+    display: none;
+  }
+  header img.logo-icon {
+    transform: scale(0.7);
+  }
+  header button {
+    width: fit-content;
+    padding: 0 8px;
+  }
+}
+@media screen and (max-width: 790px) {
+  header.desktop {
+    display: none;
+  }
+}
