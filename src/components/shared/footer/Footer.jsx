@@ -1,6 +1,7 @@
 import "./Footer.css";
 import hydraLogo from "../../../assets/images/Hydra.svg";
 import { NavLink } from "react-router-dom";
+import { Link } from "react-scroll";
 const Footer = () => {
   const socialIcons = [
     { id: 1, icon: "fa-brands fa-facebook", url: "#" },
@@ -19,16 +20,52 @@ const Footer = () => {
           <div className="line"></div>
           <ul>
             <li>
-              <NavLink>ABOUT</NavLink>
+              <Link
+                to="about"
+                spy={true}
+                smooth={true}
+                hashSpy={true}
+                offset={-120}
+                duration={500}
+              >
+                ABOUT
+              </Link>
             </li>
             <li>
-              <NavLink>SERVICES</NavLink>
+              <Link
+                to="services"
+                spy={true}
+                smooth={true}
+                hashSpy={true}
+                offset={-120}
+                duration={500}
+              >
+                SERVICES
+              </Link>
             </li>
             <li>
-              <NavLink>TECHNOLOGIES</NavLink>
+              <Link
+                to="technologies"
+                spy={true}
+                smooth={true}
+                hashSpy={true}
+                offset={-120}
+                duration={500}
+              >
+                TECHNOLOGIES
+              </Link>
             </li>
             <li>
-              <NavLink>HOW TO</NavLink>
+              <Link
+                to="howTo"
+                spy={true}
+                smooth={true}
+                hashSpy={true}
+                offset={-120}
+                duration={500}
+              >
+                HOW TO
+              </Link>
             </li>
             <li>
               <NavLink>JOIN HYDRA</NavLink>
