@@ -143,10 +143,9 @@ header.mobile .bar-container {
   );
   border-radius: 40px;
 }
-.bar2
-{
-    width: 20px;
-    margin-left: 15px;
+.bar2 {
+  width: 20px;
+  margin-left: 15px;
 }
 .change .bar1 {
   transform: translate(0, 11px) rotate(-45deg);
@@ -162,6 +161,63 @@ header.mobile .nav-closed {
 }
 header.mobile .nav-open {
   visibility: visible;
+}
+header.mobile {
+  transition: all 0.5s ease-in-out;
+}
+
+header.mobile.appear {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+header.mobile.disappear {
+  transform: translateY(-100%);
+  opacity: 0;
+}
+
+.nav-open {
+  display: block;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.nav-closed {
+  display: none;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.bar-container {
+  transition: all 0.5s ease-in-out;
+}
+
+.bar-container.change {
+  transform: rotate(180deg);
+}
+
+.bar1,
+.bar2,
+.bar3 {
+  transition: all 0.5s ease-in-out;
+}
+
+.bar-container.change .bar1 {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.bar-container.change .bar2 {
+  opacity: 0;
+}
+
+.bar-container.change .bar3 {
+  transform: rotate(-45deg) translate(5px, -5px);
 }
 @media screen and (max-width: 1110px) {
   header {
