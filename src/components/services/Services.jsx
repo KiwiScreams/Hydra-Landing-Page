@@ -105,48 +105,25 @@ const Services = () => {
           </p>
         </div>
         <div className="services-container">
-          <button onClick={handlePrevClick}>1</button>
-          <div className="service service-slide">
-            <div className="black">
-              <div className="img">
-                <img src={img1} alt="" />
+          <button onClick={handlePrevClick}>Prev</button>
+          {servicesData.map((service, index) => (
+            <div
+              className={`service service-slide ${
+                index === currentSlide ? "active" : ""
+              }`}
+              key={index}
+            >
+              <div className="black">
+                <div className="img">
+                  <img src={service.img} alt="" />
+                </div>
               </div>
+              <h3>{service.title}</h3>
+              <p>{service.description}</p>
+              <button>TRY IT NOW</button>
             </div>
-            <h3>1</h3>
-            <p>1</p>
-            <button>TRY IT NOW</button>
-          </div>
-          <div className="service service-slide">
-            <div className="black">
-              <div className="img">
-                <img src={img2} alt="" />
-              </div>
-            </div>
-            <h3>1</h3>
-            <p>1</p>
-            <button>TRY IT NOW</button>
-          </div>
-          <div className="service service-slide">
-            <div className="black">
-              <div className="img">
-                <img src={img3} alt="" />
-              </div>
-            </div>
-            <h3>2</h3>
-            <p>2</p>
-            <button>TRY IT NOW</button>
-          </div>
-          <div className="service service-slide">
-            <div className="black">
-              <div className="img">
-                <img src={img4} alt="" />
-              </div>
-            </div>
-            <h3>4</h3>
-            <p>4</p>
-            <button>TRY IT NOW</button>
-          </div>
-          <button onClick={handleNextClick}>1</button>
+          ))}
+          <button onClick={handleNextClick}>Next</button>
         </div>
       </section>
     </>
