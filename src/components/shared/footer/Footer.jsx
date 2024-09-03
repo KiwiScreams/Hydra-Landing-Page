@@ -82,7 +82,7 @@ const Footer = () => {
         <div className="footer-bottom">
           <p>
             2023 © HYDRA LANDING PAGE - BY ZINE. E. FALOUTI - ALL RIGHTS
-            RESERVED{" "}
+            RESERVED
           </p>
         </div>
       </footer>
