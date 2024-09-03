@@ -103,11 +103,13 @@ const Technology = () => {
         </div>
         <div className="numbers-container mobile">
           <div className="numbers-slider-container">
-            <div className="number-slide">
-              {numbers[currentNumber].title}
-              <h1>0{numbers[currentNumber].id}</h1>
+            <div className="black number-slide">
+              <div className="number">
+                <h1>0{numbers[currentNumber].id}</h1>
+                <h2>{numbers[currentNumber].title}</h2>
+              </div>
             </div>
-            <div className="slider-number-controls">
+            <div className="slider-controls slider-bottom">
               <button onClick={handlePrevNumber} className="prev btn">
                 <i className="fa-solid fa-chevron-left"></i>
               </button>
