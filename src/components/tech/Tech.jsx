@@ -61,8 +61,12 @@ const Technology = () => {
             <img src={softwareSlides[currentSlide].image} alt="" />
           </div>
           <div className="slider-controls">
-            <button onClick={handlePrevSlide}>&lt;</button>
-            <button onClick={handleNextSlide}>&gt;</button>
+            <button onClick={handlePrevSlide} className="prev btn">
+            <i className="fa-solid fa-chevron-left"></i>
+            </button>
+            <button onClick={handleNextSlide} className="next btn">
+              <i className="fa-solid fa-chevron-right"></i>
+            </button>
           </div>
         </div>
         <div className="build-container">

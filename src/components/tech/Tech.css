@@ -170,14 +170,53 @@
   display: flex;
   justify-content: space-between;
 }
-
 .slider-controls button {
+  width: 154px;
+  height: 48px;
+  background: linear-gradient(
+    to right,
+    var(--purple-gradient-clr),
+    var(--light-purple-gradient-clr)
+  );
+  border-radius: 40px;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: auto;
+  display: block;
+  margin-top: 35px;
+}
+.slider-controls button:hover {
+  background: linear-gradient(
+    to right,
+    var(--light-purple-gradient-clr),
+    var(--purple-gradient-clr)
+  );
+}
+.slider-controls .btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  width: 38px;
+  height: 38px;
+  box-shadow: 0 0 20px black;
+  color: var(--light-purple-radial-clr);
+}
+.slider-controls .btn.prev {
+  left: -19px;
+  z-index: 2;
+}
+.slider-controls .btn.next {
+  right: -19px;
+}
+/* .slider-controls button {
   background-color: transparent;
   border: none;
   padding: 10px;
   font-size: 24px;
   cursor: pointer;
-}
+} */
 @media screen and (max-width: 800px) {
   .tech-section .tech-container .arrow {
     display: none;
