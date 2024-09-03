@@ -43,18 +43,13 @@ const Technology = () => {
           </div>
         </div>
         <div className="software-container desktop">
-          <div>
-            <img src={vive} alt="" />
-          </div>
-          <div>
-            <img src={unity} alt="" />
-          </div>
-          <div>
-            <img src={unreal} alt="" />
-          </div>
-          <div>
-            <img src={oculus} alt="" />
-          </div>
+          {softwareSlides.map((software) => {
+            return (
+              <div key={software.id}>
+                <img src={software.image} alt="" />
+              </div>
+            );
+          })}
         </div>
         <div className="software-container software-slider-container mobile">
           <div className="software-slide">
@@ -62,7 +57,7 @@ const Technology = () => {
           </div>
           <div className="slider-controls">
             <button onClick={handlePrevSlide} className="prev btn">
-            <i className="fa-solid fa-chevron-left"></i>
+              <i className="fa-solid fa-chevron-left"></i>
             </button>
             <button onClick={handleNextSlide} className="next btn">
               <i className="fa-solid fa-chevron-right"></i>
