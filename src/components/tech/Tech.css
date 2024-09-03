@@ -60,7 +60,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 84px;
+  padding: 0 64px;
 }
 .arrow-icon {
   position: absolute;
@@ -210,14 +210,10 @@
 .slider-controls .btn.next {
   right: -19px;
 }
-/* .slider-controls button {
-  background-color: transparent;
-  border: none;
-  padding: 10px;
-  font-size: 24px;
-  cursor: pointer;
-} */
-@media screen and (max-width: 800px) {
+.software-container.mobile {
+  display: none;
+}
+@media screen and (max-width: 1080px) {
   .tech-section .tech-container .arrow {
     display: none;
   }
@@ -226,5 +222,19 @@
     border-radius: 50px;
     width: 90%;
     background-position: center;
+  }
+  .software-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .software-container.desktop {
+    display: none;
+  }
+  .software-container.mobile {
+    display: block;
   }
 }
