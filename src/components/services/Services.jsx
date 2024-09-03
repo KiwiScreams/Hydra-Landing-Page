@@ -105,25 +105,34 @@ const Services = () => {
           </p>
         </div>
         <div className="services-container">
-          <button onClick={handlePrevClick}>Prev</button>
-          {servicesData.map((service, index) => (
-            <div
-              className={`service service-slide ${
-                index === currentSlide ? "active" : ""
-              }`}
-              key={index}
-            >
-              <div className="black">
-                <div className="img">
-                  <img src={service.img} alt="" />
+          <div
+            style={{ position: "relative", width: "fit-content" }}
+            className="just-div"
+          >
+            <button onClick={handlePrevClick} className="btn prev">
+              <i className="fa-solid fa-chevron-left"></i>
+            </button>
+            {servicesData.map((service, index) => (
+              <div
+                className={`service service-slide ${
+                  index === currentSlide ? "active" : ""
+                }`}
+                key={index}
+              >
+                <div className="black">
+                  <div className="img">
+                    <img src={service.img} alt="" />
+                  </div>
                 </div>
+                <h3>{service.title}</h3>
+                <p>{service.description}</p>
+                <button>TRY IT NOW</button>
               </div>
-              <h3>{service.title}</h3>
-              <p>{service.description}</p>
-              <button>TRY IT NOW</button>
-            </div>
-          ))}
-          <button onClick={handleNextClick}>Next</button>
+            ))}
+            <button onClick={handleNextClick} className="btn next">
+              <i className="fa-solid fa-chevron-right"></i>
+            </button>
+          </div>
         </div>
       </section>
     </>
