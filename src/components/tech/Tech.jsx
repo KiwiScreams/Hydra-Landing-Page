@@ -30,6 +30,17 @@ const Technology = () => {
         (prevSlide - 1 + softwareSlides.length) % softwareSlides.length
     );
   };
+  const [currentNumber, setCurrentNumber] = useState(0);
+
+  const handleNextNumber = () => {
+    setCurrentNumber((prevNumber) => (prevNumber + 1) % numbers.length);
+  };
+
+  const handlePrevNumber = () => {
+    setCurrentNumber(
+      (prevNumber) => (prevNumber - 1 + numbers.length) % numbers.length
+    );
+  };
   return (
     <>
       <section className="tech-section" id="technologies">
@@ -80,7 +91,7 @@ const Technology = () => {
             in. Lectus magna fringilla urna porttitor rhoncus vitae.
           </p>
         </div>
-        <div className="numbers-container">
+        <div className="numbers-container desktop">
           {numbers.map((number) => (
             <div key={number.id} className="black">
               <div className="number">
@@ -89,6 +100,22 @@ const Technology = () => {
               </div>
             </div>
           ))}
+        </div>
+        <div className="numbers-container mobile">
+          <div className="numbers-slider-container">
+            <div className="number-slide">
+              {numbers[currentNumber].title}
+              <h1>0{numbers[currentNumber].id}</h1>
+            </div>
+            <div className="slider-number-controls">
+              <button onClick={handlePrevNumber} className="prev btn">
+                <i className="fa-solid fa-chevron-left"></i>
+              </button>
+              <button onClick={handleNextNumber} className="next btn">
+                <i className="fa-solid fa-chevron-right"></i>
+              </button>
+            </div>
+          </div>
         </div>
       </section>
     </>

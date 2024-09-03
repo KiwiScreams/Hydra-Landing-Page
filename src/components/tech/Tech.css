@@ -213,6 +213,48 @@
 .software-container.mobile {
   display: none;
 }
+
+.numbers-slider-container {
+  position: relative;
+  width: 100%;
+  height: 100px;
+}
+
+.number-slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: opacity 0.5s;
+}
+
+.number-slide h1 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.slider-number-controls {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: space-between;
+}
+
+.slider-number-controls button {
+  background-color: transparent;
+  border: none;
+  padding: 10px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.slider-number-controls button:hover {
+  background-color: #ccc;
+}
 @media screen and (max-width: 1080px) {
   .tech-section .tech-container .arrow {
     display: none;
@@ -237,4 +279,9 @@
   .software-container.mobile {
     display: block;
   }
+  .numbers-container {
+    padding: 0 20px;
+  }
+}
+@media screen and (max-width: 800px) {
 }
