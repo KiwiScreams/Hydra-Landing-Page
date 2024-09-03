@@ -2,11 +2,20 @@ import "./Footer.css";
 import hydraLogo from "../../../assets/images/Hydra.svg";
 import { NavLink } from "react-router-dom";
 const Footer = () => {
+  const socialIcons = [
+    { id: 1, icon: "fa-brands fa-facebook", url: "#" },
+    { id: 2, icon: "fa-brands fa-twitter", url: "#" },
+    { id: 3, icon: "fa-brands fa-linkedin-in", url: "#" },
+    { id: 4, icon: "fa-brands fa-youtube", url: "#" },
+    { id: 5, icon: "fa-brands fa-instagram", url: "#" },
+    { id: 6, icon: "fa-brands fa-pinterest", url: "#" },
+  ];
+
   return (
     <>
       <footer>
         <div className="footer-container">
-          <img src={hydraLogo} alt="" className="logo"/>
+          <img src={hydraLogo} alt="" className="logo" />
           <div className="line"></div>
           <ul>
             <li>
@@ -44,36 +53,13 @@ const Footer = () => {
           <ul className="social">
             <li>SOCIALIZE WITH HYDRA</li>
             <ul className="content">
-              <li>
-                <a href="#">
-                  <i className="fa-brands fa-facebook"></i>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <i className="fa-brands fa-twitter"></i>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <i className="fa-brands fa-linkedin-in"></i>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <i className="fa-brands fa-youtube"></i>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <i className="fa-brands fa-instagram"></i>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <i className="fa-brands fa-pinterest"></i>
-                </a>
-              </li>
+              {socialIcons.map((icon) => (
+                <li key={icon.id}>
+                  <a href={icon.url}>
+                    <i className={icon.icon}></i>
+                  </a>
+                </li>
+              ))}
             </ul>
             <button>BUILD YOUR WORLD</button>
           </ul>
