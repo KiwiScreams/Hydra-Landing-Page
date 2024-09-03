@@ -94,25 +94,6 @@
 {
     animation-play-state: paused;
 }
-.build-container
-{
-    display: flex;
-    color: var(--white-clr);
-    margin-bottom: 100px;
-    padding: 0 84px;
-    justify-content: space-between;
-}
-.build-container p
-{
-    width: 50%;
-}
-.build-container .title .title-container
-{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 16px;
-}
 .longArrow
 {
     width: 228px;

@@ -45,7 +45,7 @@
 .about-container .content .norm {
   margin-bottom: 42px;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 900px) {
   .about-section .about-container {
     flex-direction: column;
   }
@@ -61,5 +61,18 @@
   .about-section .about-container .content {
     width: 100%;
     color: var(--white-clr);
+  }
+  .about-container .content .norm,
+  .about-container .content .bold {
+    display: none;
+  }
+  .about-section .about-container {
+    padding: 0 24px;
+    gap: 50px;
+  }
+  .about-container button {
+    display: block;
+    margin: auto;
+    margin-top: 34px;
   }
 }
