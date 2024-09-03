@@ -3,6 +3,7 @@ import unity from "../../assets/images/unity.png";
 import oculus from "../../assets/images/oculus.png";
 import unreal from "../../assets/images/unreal.png";
 import vive from "../../assets/images/vive.png";
+import { useState, useEffect } from "react";
 import longArrow from "../../assets/images/long arrow.svg";
 const numbers = [
   { id: 1, title: "3D Conception & Design" },
@@ -10,7 +11,25 @@ const numbers = [
   { id: 3, title: "VR World User Testing" },
   { id: 4, title: "Hydra VR Deploy" },
 ];
+const softwareSlides = [
+  { id: 1, image: vive },
+  { id: 2, image: unity },
+  { id: 3, image: unreal },
+  { id: 4, image: oculus },
+];
 const Technology = () => {
+  const [currentSlide, setCurrentSlide] = useState(0);
+
+  const handleNextSlide = () => {
+    setCurrentSlide((prevSlide) => (prevSlide + 1) % softwareSlides.length);
+  };
+
+  const handlePrevSlide = () => {
+    setCurrentSlide(
+      (prevSlide) =>
+        (prevSlide - 1 + softwareSlides.length) % softwareSlides.length
+    );
+  };
   return (
     <>
       <section className="tech-section" id="technologies">
@@ -23,7 +42,7 @@ const Technology = () => {
             <i className="fa-solid fa-chevron-down arrow-icon"></i>
           </div>
         </div>
-        <div className="software-container">
+        <div className="software-container desktop">
           <div>
             <img src={vive} alt="" />
           </div>
@@ -35,6 +54,15 @@ const Technology = () => {
           </div>
           <div>
             <img src={oculus} alt="" />
+          </div>
+        </div>
+        <div className="software-container software-slider-container mobile">
+          <div className="software-slide">
+            <img src={softwareSlides[currentSlide].image} alt="" />
+          </div>
+          <div className="slider-controls">
+            <button onClick={handlePrevSlide}>&lt;</button>
+            <button onClick={handleNextSlide}>&gt;</button>
           </div>
         </div>
         <div className="build-container">

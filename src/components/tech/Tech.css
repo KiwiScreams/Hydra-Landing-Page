@@ -1,160 +1,191 @@
-.tech-section
-{
-    width: 100%;
-    padding: 0;
-    margin-bottom: 130px;
+.tech-section {
+  width: 100%;
+  padding: 0;
+  margin-bottom: 130px;
 }
-.tech-section .tech-container
-{
-    width: 100%;
-    height: 300px;
-    border-radius: 160px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 100px;
-    width: 90%;
-    margin: auto;
-    background-image: url(../../assets/images/techGirl.png);
-    position: relative;
+.tech-section .tech-container {
+  width: 100%;
+  height: 300px;
+  border-radius: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+  width: 90%;
+  margin: auto;
+  background-image: url(../../assets/images/techGirl.png);
+  position: relative;
 }
-.tech-section .tech-container .arrow
-{
-    background-color: #00000021;
-    border-radius: 50%;
-    width: 100px;
-    height: 100px;
-    position: absolute;
-    bottom: -50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.tech-section .tech-container .arrow {
+  background-color: #00000021;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  bottom: -50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.tech-section .tech-container .arrow i
-{
-    width: 60px;
-    height: 60px;
-    background: linear-gradient(
-        to right,
-        var(--purple-gradient-clr),
-        var(--light-purple-gradient-clr)
-      );
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    border-radius: 50%;
-    font-size: 30px;
-    color: var(--light-purple-radial-clr);
+.tech-section .tech-container .arrow i {
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(
+    to right,
+    var(--purple-gradient-clr),
+    var(--light-purple-gradient-clr)
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 30px;
+  color: var(--light-purple-radial-clr);
 }
-.tech-section .tech-container .text-container
-{
-    text-align: center;
-    color: var(--white-clr);
+.tech-section .tech-container .text-container {
+  text-align: center;
+  color: var(--white-clr);
 }
-.bold
-{
-    font-size: 36px;
-    font-weight: bold;
-    color: var(--white-clr);
+.bold {
+  font-size: 36px;
+  font-weight: bold;
+  color: var(--white-clr);
 }
-.norm
-{
-    font-size: 36px;
-    font-weight: lighter;
-    color: var(--white-clr);
+.norm {
+  font-size: 36px;
+  font-weight: lighter;
+  color: var(--white-clr);
 }
-.software-container
-{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 84px;
+.software-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 84px;
 }
-.arrow-icon
-{
-    position: absolute;
-    animation: pulse infinite 0.8s;
+.arrow-icon {
+  position: absolute;
+  animation: pulse infinite 0.8s;
 }
-@keyframes pulse
-{
-    0%
-    {
-      top: 10px;
-    }
-    50%
-    {
-      top: 30px;
-    }
-    100%
-    {
-      top: 10px;
-    }
+@keyframes pulse {
+  0% {
+    top: 10px;
+  }
+  50% {
+    top: 30px;
+  }
+  100% {
+    top: 10px;
+  }
 }
-.arrow-icon:hover
-{
-    animation-play-state: paused;
+.arrow-icon:hover {
+  animation-play-state: paused;
 }
-.longArrow
-{
-    width: 228px;
-    height: 50px;
-    background-image: url(../../assets/images/long\ arrow.svg);
-    background-size: 100%;
-    background-position: center;
+.longArrow {
+  width: 228px;
+  height: 50px;
+  background-image: url(../../assets/images/long\ arrow.svg);
+  background-size: 100%;
+  background-position: center;
 }
-.numbers-container
-{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 120px;
-    background-image: url(../../assets/images/path.png);
-    background-repeat: no-repeat;
-    background-size: 100%;
+.numbers-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 120px;
+  background-image: url(../../assets/images/path.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
-.numbers-container .number
-{
-    color: var(--white-clr);
-    text-align: center;
+.numbers-container .number {
+  color: var(--white-clr);
+  text-align: center;
 }
-.numbers-container .number h1
-{
-    font-size: 64px;
-    color: var(--text-clr);
-    border-radius: 50%;
-    background: linear-gradient(
-        to right,
-        var(--purple-gradient-clr),
-        var(--light-purple-gradient-clr)
-      );
-    width: 160px;
+.numbers-container .number h1 {
+  font-size: 64px;
+  color: var(--text-clr);
+  border-radius: 50%;
+  background: linear-gradient(
+    to right,
+    var(--purple-gradient-clr),
+    var(--light-purple-gradient-clr)
+  );
+  width: 160px;
+  height: 160px;
+  display: flex;
+  margin-bottom: 26px;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.numbers-container .number h2 {
+  text-align: center;
+  font-size: 24px;
+  position: absolute;
+  bottom: -50px;
+}
+.numbers-container .black {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: #00000021;
+  position: relative;
+}
+.numbers-container .number:hover h1 {
+  width: 100%;
+  height: 100%;
+}
+.software-slider-container {
+  position: relative;
+  width: 90%;
+  margin: auto;
+  height: 300px;
+}
+
+.software-slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: opacity 0.5s;
+}
+
+.software-slide img {
+  height: 100%;
+  position: center;
+  object-fit: cover;
+  margin: auto;
+  display: block;
+}
+
+.slider-controls {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: space-between;
+}
+
+.slider-controls button {
+  background-color: transparent;
+  border: none;
+  padding: 10px;
+  font-size: 24px;
+  cursor: pointer;
+}
+@media screen and (max-width: 800px) {
+  .tech-section .tech-container .arrow {
+    display: none;
+  }
+  .tech-section .tech-container {
     height: 160px;
-    display: flex;
-    margin-bottom: 26px;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-.numbers-container .number h2
-{
-    text-align: center;
-    font-size: 24px;
-    position: absolute;
-    bottom: -50px;
-}
-.numbers-container .black
-{
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    background-color: #00000021;
-    position: relative;
-}
-.numbers-container .number:hover h1
-{
-    width: 100%;
-    height: 100%;
+    border-radius: 50px;
+    width: 90%;
+    background-position: center;
+  }
 }
