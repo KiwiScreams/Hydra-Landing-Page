@@ -41,6 +41,12 @@ const Technology = () => {
       (prevNumber) => (prevNumber - 1 + numbers.length) % numbers.length
     );
   };
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      handleNextNumber();
+    }, 5000);
+    return () => clearInterval(intervalId);
+  }, [handleNextNumber]);
   return (
     <>
       <section className="tech-section" id="technologies">
