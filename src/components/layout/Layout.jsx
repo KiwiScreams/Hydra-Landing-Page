@@ -3,6 +3,8 @@ import layoutImage from "../../assets/images/LayoutImage.png";
 import arrowImage from "../../assets/images/Arrow.svg";
 import { useState, useEffect } from "react";
 import locationIcon from "../../assets/images/Location-Icon.svg";
+import emailIcon from "../../assets/images/mail.svg";
+import phoneCallIcon from "../../assets/images/phone-call.svg";
 const Layout = () => {
   const [scrolled, setScrolled] = useState(false);
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -83,7 +85,7 @@ const Layout = () => {
           </div>
           <div className="line"></div>
           <div className="box">
-            <img src={locationIcon} alt="" />
+            <img src={phoneCallIcon} alt="" />
             <div className="social-info">
               <h3>Give Us a Call</h3>
               <p>(110) 1111-1010</p>
@@ -91,7 +93,7 @@ const Layout = () => {
           </div>
           <div className="line"></div>
           <div className="box">
-            <img src={locationIcon} alt="" />
+            <img src={emailIcon} alt="" />
             <div className="social-info">
               <h3>Send Us a Message</h3>
               <p>Contact@HydraVTech.com</p>
@@ -115,7 +117,7 @@ const Layout = () => {
           </div>
           <div className="slide">
             <div className="box">
-              <img src={locationIcon} alt="" />
+              <img src={phoneCallIcon} alt="" />
               <div className="social-info">
                 <h3>Give Us a Call</h3>
                 <p>(110) 1111-1010</p>
@@ -124,7 +126,7 @@ const Layout = () => {
           </div>
           <div className="slide">
             <div className="box">
-              <img src={locationIcon} alt="" />
+              <img src={emailIcon} alt="" />
               <div className="social-info">
                 <h3>Send Us a Message</h3>
                 <p>Contact@HydraVTech.com</p>
