@@ -1,5 +1,4 @@
 import "./Header.css";
-import { NavLink } from "react-router-dom";
 import hydraLogo from "../../../assets/images/Hydra.svg";
 import hydraText from "../../../assets/images/HydraText.svg";
 import { useState, useEffect } from "react";

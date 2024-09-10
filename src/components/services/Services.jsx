@@ -53,6 +53,12 @@ const Services = () => {
     const slides = document.querySelectorAll(".service-slide");
     setCurrentSlide((currentSlide + 1) % slides.length);
   };
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      handleNextClick();
+    }, 5000);
+    return () => clearInterval(intervalId);
+  }, [handleNextClick]);
   return (
     <>
       <section className="services-section desktop" id="services">
