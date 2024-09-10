@@ -41,6 +41,12 @@ const Layout = () => {
     const slides = document.querySelectorAll(".slide");
     setCurrentSlide((currentSlide + 1) % slides.length);
   };
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      handleNextClick();
+    }, 5000);
+    return () => clearInterval(intervalId);
+  }, [handleNextClick]);
   return (
     <>
       <section
