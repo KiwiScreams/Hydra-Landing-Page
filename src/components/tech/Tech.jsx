@@ -47,6 +47,12 @@ const Technology = () => {
     }, 5000);
     return () => clearInterval(intervalId);
   }, [handleNextNumber]);
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      handleNextSlide();
+    }, 5000);
+    return () => clearInterval(intervalId);
+  }, [handleNextSlide]);
   return (
     <>
       <section className="tech-section" id="technologies">
