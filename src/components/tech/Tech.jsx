@@ -4,7 +4,6 @@ import oculus from "../../assets/images/oculus.png";
 import unreal from "../../assets/images/unreal.png";
 import vive from "../../assets/images/vive.png";
 import { useState, useEffect } from "react";
-import longArrow from "../../assets/images/long arrow.svg";
 const numbers = [
   { id: 1, title: "3D Conception & Design" },
   { id: 2, title: "Interaction Design" },
